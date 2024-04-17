@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+
 }
 
 body{
-    height: 100vh;
     background-image: linear-gradient(20deg, rgba(255, 0, 0, 1) 26%, rgba(17, 29, 56, 1) 69%);
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .card{
@@ -34,4 +36,51 @@ body{
 .Quiz-section h2 {
     padding: 1.5rem;
     font-weight: 600;
+    padding-left: 0px;
+}
+
+.option{
+    width: 100%;
+    border: 1px solid #222;
+    text-align: left;
+    padding: 0.7rem;
+    background-color: white;
+    color: black;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    transition: all 0.3s ;
+}
+
+.option:hover:not([disabled]){
+    cursor: pointer;
+    color: white;
+    background-color: #222;
+}
+
+.option:disabled{
+    cursor: no-drop;
+}
+
+.submit-button{
+    padding: 1rem;
+    width: 8rem;
+    background: black;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.correct{
+    background-color: rgb(52, 230, 52);
+    color: black;
+}
+
+.incorrect{
+    color: black;
+    background-color: rgb(205, 32, 32);
 }
